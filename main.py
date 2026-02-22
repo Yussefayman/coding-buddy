@@ -101,11 +101,12 @@ class CLI:
                     event.data.get('call_id',''),
                     tool_name,
                     tool_kind,
-                    event.data.get('success',False),
-                    event.data.get('output',""),
-                    event.data.get('error'),
-                    event.data.get('metadata'),
-                    event.data.get('truncated',False),
+                    success=event.data.get('success',False),
+                    output=event.data.get('output',""),
+                    error=event.data.get('error'),
+                    metadata=event.data.get('metadata'),
+                    truncated=event.data.get('truncated',False),
+                    diff=event.data.get('diff'),
                 )
 
         return final_response

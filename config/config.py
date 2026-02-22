@@ -3,7 +3,7 @@ from pathlib import Path
 from pydantic import BaseModel,Field
 
 class ModelConfig(BaseModel):
-    name: str = "arcee-ai/trinity-large-preview:free"
+    name: str = "nvidia/nemotron-3-nano-30b-a3b:free"
     temperature: float = Field(default=1, ge=0.0, le=2.0)
     context_window: int = 256_000
 

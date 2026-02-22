@@ -1,2 +1,2 @@
 [model]
-temperature=0
+name = "stepfun/step-3.5-flash:free"
