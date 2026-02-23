@@ -53,6 +53,7 @@ class CLI:
         tool = self.agent.session.tool_registry.get(tool_name)
         if not tool:
             tool_kind = None
+            return tool_kind
             
         tool_kind = tool.kind.value
 
