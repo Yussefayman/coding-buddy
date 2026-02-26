@@ -108,6 +108,7 @@ class CLI:
                     metadata=event.data.get('metadata'),
                     truncated=event.data.get('truncated',False),
                     diff=event.data.get('diff'),
+                    exit_code=event.data.get('exit_code'),
                 )
 
         return final_response
