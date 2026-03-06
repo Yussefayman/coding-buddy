@@ -2,7 +2,7 @@ from pathlib import Path
 from tomllib import TOMLDecodeError,load
 from typing import Any
 from config.config import Config
-from platformdirs import user_config_dir
+from platformdirs import user_config_dir, user_data_dir
 from utils.errors import ConfigError
 import logging
 
@@ -16,6 +16,9 @@ def get_config_dir() -> Path:
 
 def get_system_config_path() -> Path:
     return get_config_dir() / CONFIG_FILE_NAME
+
+def get_data_dir() -> Path:
+    return Path(user_data_dir('ai-agent'))
 
 def _parse_tomml(path: Path):
     try:
