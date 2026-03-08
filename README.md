@@ -35,6 +35,9 @@ coding-buddy
 # Single prompt
 coding-buddy "explain this codebase"
 ```
+## Demo
+
+<video src="artifacts/Coding buddy.mp4" controls width="100%"></video> 
 
 ## Architecture
 
@@ -50,3 +53,4 @@ coding-buddy "explain this codebase"
 | `pydantic` | Tool schema validation |
 | `tiktoken` | Token counting |
 | `httpx` | Async HTTP |
+
